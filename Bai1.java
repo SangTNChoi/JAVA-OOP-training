@@ -25,7 +25,7 @@ class DIEM{
         y = scanner.nextFloat();
     }
 }
-public class Bai_1{
+public class Bai1{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         DIEM point = new DIEM();
@@ -33,5 +33,7 @@ public class Bai_1{
         point.get_DIEM();
         point.di_chuyen(scanner);
         point.get_DIEM();
+
+        scanner.close();
     }
 }
