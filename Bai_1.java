@@ -12,23 +12,26 @@ class DIEM{
     }
 
     public void nhap(Scanner scanner){
-        System.out.println("enter x: ");
-        this.x = Float.parseFloat(scanner.nextLine());
-        System.out.println("enter y: ");
-        this.y = Float.parseFloat(scanner.nextLine());
+        System.out.println("enter x and y: ");
+        this.x = scanner.nextFloat();
+        this.y = scanner.nextFloat();
     }
-
-    public void area(){
-        System.out.print(x*y);
+    public void get_DIEM(){
+        System.out.println(x + " " + y);
     }
-
+    public void di_chuyen(Scanner scanner){
+        System.out.println("enter new position for x and y: ");
+        x = scanner.nextFloat();
+        y = scanner.nextFloat();
+    }
 }
 public class Bai_1{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         DIEM point = new DIEM();
         point.nhap(scanner);
-
-        point.area();
+        point.get_DIEM();
+        point.di_chuyen(scanner);
+        point.get_DIEM();
     }
 }
