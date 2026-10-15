@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class SINHVIEN{
-    public String mssv;
-    public String name;
-    public String lop;
-    public Float diem1;
-    public Float diem2;
-    public Float diem3;
+    protected String mssv;
+    protected String name;
+    protected String lop;
+    protected Float diem1;
+    protected Float diem2;
+    protected Float diem3;
 
     public SINHVIEN(){}
     public SINHVIEN(String mssv, String name, String lop, Float diem1, Float diem2, Float diem3){
